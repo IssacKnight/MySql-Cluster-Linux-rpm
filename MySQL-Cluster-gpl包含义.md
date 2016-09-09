@@ -1,118 +1,71 @@
-###¼òÒªÃèÊö£º
+MySQL-server-VERSION.glibc23.i386.rpm 
 
-- »ÃµÆÆ¬²éÑ¯½Ó¿Ú
+The MySQL server. You need this unless you only want to connect to a MySQL server running on another machine. 
 
-###ÇëÇóURL£º
+MySQL-client-VERSION.glibc23.i386.rpm 
 
-- `/datahandler/customerapp/appslider/findbymap`
-  
-###ÇëÇó·½Ê½£º
+The standard MySQL client programs. You probably always want to install this package. 
 
-- POST 
+MySQL-devel-VERSION.glibc23.i386.rpm 
 
-###²ÎÊı£º
+The libraries and include files that are needed if you want to compile other MySQL clients, such as the Perl modules. 
 
-|²ÎÊıÃû|±ØÑ¡|ÀàĞÍ|ËµÃ÷|demo|
-|:----|:---|:----- |-----   |
-|cityCode|ÊÇ  |String |¸ßµÂµØÍ¼³ÇÊĞ±àÂë(ÈçÄÏ¾©ÊĞ-025)|025|
-|modelId|ÊÇ  |String |»ÃµÆÄ£°åid 1£º¿Í»§¶ËÊ×Ò³»ÃµÆ×é£¨Ä¿Ç°ÒµÎñÖ»´«1£©|1|
+MySQL-debuginfo-VERSION.glibc23.i386.rpm 
 
-###·µ»Øcode£º
+This package contains debugging information. debuginfo RPMs are never needed to use MySQL software; this is true both for the server and for client programs. However, they contain additional information that might be needed by a debugger to analyze a crash. 
 
-|Öµ|ËµÃ÷|
-|:----|:-----|
-|6000| Êı¾İÇëÇó³É¹¦ |
-|7000| ·µ»ØÁĞ±íÎª¿Õ£¬ÒµÎñÂß¼­´íÎó |
-|7003| Êı¾İÇëÇóÊ§°Ü |
-###·µ»Ødata£º
+MySQL-shared-VERSION.glibc23.i386.rpm 
 
-|key|ËµÃ÷|demo|
-|:----|:-----|:-----|
-|id| ×ÔÔöid |876 |
-|name|»ÃµÆÆ¬Ãû³Æ |Ê×Ò³¶¥²¿»ÃµÆ1|
-|modelId|»ÃµÆÄ£°åid |1 |
-|platform|Æ½Ì¨±êÊ¶£¨¿Í»§¶Ëapp 0£ºÈ«Æ½Ì¨ 1£º½öandroid 2:½öios 3.½öwinPhone£©|0|
-|cityCode|¸ßµÂ³ÇÊĞ±àÂë|025|
-|imgUrl|Í¼Æ¬Url |f3114e86976037e75ff9bcb44dca424f|
-|modelName|»ÃµÆÆ¬×éÃû³Æ |Ê×Ò³»ÃµÆ|
-|silderParams|»ÃµÆÆ¬µ÷Õû²ÎÊı£¨Ô¤Áô£© | |
-|sortOrder|ÅÅĞòÒÀ¾İ|1|
-|operateUser|²Ù×÷ÈËId|e623bfe960e241ee9449fa353b0fae81|
-|status|×´Ì¬Öµ 0£ºÕı³£ -1£ºÍ£ÓÃ|0|
-###·µ»ØÊ¾Àı£º
+This package contains the shared libraries (libmysqlclient.so*) that certain languages and applications need to dynamically load and use MySQL. It contains single-threaded and thread-safe libraries. If you install this package, do not install the MySQL-shared-compat package. 
 
-```
-{
-    "code": "6000",
-    "exceptions": null,
-    "data": [
-        {
-            "id": 1,
-            "name": "Ê×Ò³¶¥²¿»ÃµÆ1",
-            "modelId": 1,
-            "platform": "0",
-            "cityCode": "Magugi",
-            "imgUrl": "f3114e86976037e75ff9bcb44dca424f",
-            "silderParams": " ",
-            "modelName": "Ê×Ò³»ÃµÆ",
-            "status": "0",
-            "sortOrder": "1",
-            "operateUser": "³õÊ¼»¯"
-        },
-        {
-            "id": 2,
-            "name": "Ê×Ò³¶¥²¿»ÃµÆ2",
-            "modelId": 1,
-            "platform": "0",
-            "cityCode": "Magugi",
-            "imgUrl": "1fd939f3bc22462f62b85d55e9946970",
-            "silderParams": " ",
-            "modelName": "Ê×Ò³»ÃµÆ",
-            "status": "0",
-            "sortOrder": "2",
-            "operateUser": "³õÊ¼»¯"
-        },
-        {
-            "id": 3,
-            "name": "Ê×Ò³¶¥²¿»ÃµÆ3",
-            "modelId": 1,
-            "platform": "0",
-            "cityCode": "Magugi",
-            "imgUrl": "13a98be90c9048ce8786ec9b05cef88f",
-            "silderParams": " ",
-            "modelName": "Ê×Ò³»ÃµÆ",
-            "status": "0",
-            "sortOrder": "3",
-            "operateUser": "³õÊ¼»¯"
-        },
-        {
-            "id": 4,
-            "name": "Ê×Ò³¶¥²¿»ÃµÆ4",
-            "modelId": 1,
-            "platform": "0",
-            "cityCode": "Magugi",
-            "imgUrl": "7d8a6458da570bbab72c9c95924a5794",
-            "silderParams": " ",
-            "modelName": "Ê×Ò³»ÃµÆ",
-            "status": "0",
-            "sortOrder": "4",
-            "operateUser": "³õÊ¼»¯"
-        },
-        {
-            "id": 5,
-            "name": "Ê×Ò³¶¥²¿»ÃµÆ5",
-            "modelId": 1,
-            "platform": "0",
-            "cityCode": "Magugi",
-            "imgUrl": "c2f72c332b54d52326b2b7f0e0e45051",
-            "silderParams": " ",
-            "modelName": "Ê×Ò³»ÃµÆ",
-            "status": "0",
-            "sortOrder": "5",
-            "operateUser": "³õÊ¼»¯"
-        }
-    ]
-}
-```
-###½Ó¿Ú¸ºÔğÈË£º
-- Issac
+MySQL-shared-compat-VERSION.glibc23.i386.rpm 
+
+This package includes the shared libraries for MySQL 3.23, 4.0, and so on, up to the current release. It contains single-threaded and thread-safe libraries. Install this package instead of MySQL-shared if you have applications installed that are dynamically linked against older versions of MySQL but you want to upgrade to the current version without breaking the library dependencies. 
+
+MySQL-shared-compat-advanced-gpl-VERSION.glibc23.i386.rpm, MySQL-shared-compat-advanced-VERSION.glibc23.i386.rpm 
+
+These are like the MySQL-shared-compat package, but are for the â€œMySQL Enterprise Server â€“ Advanced Editionâ€ products. Install these packages rather than the normal MySQL-shared-compat package if you want to included shared client libraries for older MySQL versions. 
+
+MySQL-embedded-VERSION.glibc23.i386.rpm 
+
+The embedded MySQL server library. 
+
+MySQL-ndb-management-VERSION.glibc23.i386.rpm, MySQL-ndb-storage-VERSION.glibc23.i386.rpm, MySQL-ndb-tools-VERSION.glibc23.i386.rpm, MySQL-ndb-extra-VERSION.glibc23.i386.rpm 
+
+Packages that contain additional files for MySQL Cluster installations. 
+
+MySQL-server-VERSION.glibc23.i386.rpm 
+
+The MySQL server. You need this unless you only want to connect to a MySQL server running on another machine. 
+
+MySQL-client-VERSION.glibc23.i386.rpm 
+
+The standard MySQL client programs. You probably always want to install this package. 
+
+MySQL-devel-VERSION.glibc23.i386.rpm 
+
+The libraries and include files that are needed if you want to compile other MySQL clients, such as the Perl modules. 
+
+MySQL-debuginfo-VERSION.glibc23.i386.rpm 
+
+This package contains debugging information. debuginfo RPMs are never needed to use MySQL software; this is true both for the server and for client programs. However, they contain additional information that might be needed by a debugger to analyze a crash. 
+
+MySQL-shared-VERSION.glibc23.i386.rpm 
+
+This package contains the shared libraries (libmysqlclient.so*) that certain languages and applications need to dynamically load and use MySQL. It contains single-threaded and thread-safe libraries. If you install this package, do not install the MySQL-shared-compat package. 
+
+MySQL-shared-compat-VERSION.glibc23.i386.rpm 
+
+This package includes the shared libraries for MySQL 3.23, 4.0, and so on, up to the current release. It contains single-threaded and thread-safe libraries. Install this package instead of MySQL-shared if you have applications installed that are dynamically linked against older versions of MySQL but you want to upgrade to the current version without breaking the library dependencies. 
+
+MySQL-shared-compat-advanced-gpl-VERSION.glibc23.i386.rpm, MySQL-shared-compat-advanced-VERSION.glibc23.i386.rpm 
+
+These are like the MySQL-shared-compat package, but are for the â€œMySQL Enterprise Server â€“ Advanced Editionâ€ products. Install these packages rather than the normal MySQL-shared-compat package if you want to included shared client libraries for older MySQL versions. 
+
+MySQL-embedded-VERSION.glibc23.i386.rpm 
+
+The embedded MySQL server library. 
+
+MySQL-ndb-management-VERSION.glibc23.i386.rpm, MySQL-ndb-storage-VERSION.glibc23.i386.rpm, MySQL-ndb-tools-VERSION.glibc23.i386.rpm, MySQL-ndb-extra-VERSION.glibc23.i386.rpm 
+
+Packages that contain additional files for MySQL Cluster installations. 
